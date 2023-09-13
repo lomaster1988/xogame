@@ -4,73 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-
-.loanform {
-                        display: flex;
-                        justify-content: center; }
-.calc-header {
-                        display: flex;
-                        justify-content: center; }
-.outerresults {
-
-                        margin-left: 25px;
-    }                        
-
- .inputs{
-                        margin-top: 10px;
- }       
- .sum-outer, .payment-outer, .rate-outer{
-                        margin-top: 30px;
- }           
-            
-            
-            </style>
-   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="calc-header"><h1>Калькулятор ипотеки</h1></div>
-<div class = loanform>
 
-   <form class="input">
-     <label>Тип программы</label><br>
-    <select class="rate">
+<div class="gameInterface">
 
-    <option value="6.9">Господдержка(6.9%)</option>
-    <option value="0.5">МЕГАИпотека(0.5%)</option>
-    <option value="5.3">Рефинансирование(5.3%)</option>
-    </select>
-<div class = "inputs">Цена недвижимости</div>
-<input type="number" class="price">
-
-<div class = "inputs">Первоначальный взнос</div>
-<input type="number" class="first-payment" value=0>
-
-<div class = "inputs">Срок кредита</div>
-<input type="number" class="period" value=1>
-   </form>
-
-
-    <div class = "outerresults">
-<div class = "outerNumbers">
-
-Сумма кредита: 
-<div class="sum-outer"></div>
-Ежемесячный платеж:
-<div class="payment-outer"></div>
-
-  </div>
-Ставка:
-<div class="rate-outer"></div>
+    <div class="gameHeader">
+Сейчас ходит: <div class = "player">Player1</div>
     </div>
+
+
+<div class="gameField">
+    
+
+<div class="row">
+<div class="square1"></div><div class="square2"></div><div class="square3"></div>
+</div>
+<div class="row">
+    <div class="square4"></div><div class="square5"></div><div class="square6"></div>
+    </div>
+    <div class="row">
+        <div class="square7"></div><div class="square8"></div><div class="square9"></div>
+        </div>
 
 </div>
 
-<script src="mortgage.js"></script>
-<script src="script.js"></script>
+</div>
 
+<script src="script.js"></script>
 
 
 </body>

@@ -1,0 +1,73 @@
+.row{
+    display: flex;
+    vertical-align: middle;
+    
+}
+
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6,
+.square7,
+.square8,
+.square9
+{
+    margin: 0pt auto;
+    width: 100pt;
+    height: 100pt;
+    font-size: 30pt;
+    vertical-align: middle;
+    text-align: center;
+    
+}
+
+
+.square1,
+.square2,
+.square3,
+.square4,
+.square5,
+.square6{
+
+    border-bottom-width:1px;
+    border-bottom-left-radius: black;
+    border-bottom-style: solid;
+
+}
+
+.square1,
+.square2,
+.square4,
+.square5,
+.square7,
+.square8{
+    border-right-width:1px;
+    border-right-style: solid;
+    vertical-align: middle;
+    
+}
+
+.gameField{
+
+    background-color: blanchedalmond;
+    font-family: cursive;
+    width: 300pt;
+  
+                justify-content: center;
+                vertical-align: middle;
+
+}
+.gameHeader{
+    width: 300pt;
+    height: 50pt;
+    background-color: white;
+    text-align: center;
+}
+
+.gameInterface{
+
+    margin: 0pt auto;
+   
+}
