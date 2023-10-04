@@ -1,39 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="gameInterface">
-
-    <div class="gameHeader">
-Сейчас ходит: <div class = "player">Player1</div>
-    </div>
+    <div class="gameInterface">
 
 
-<div class="gameField">
-    
+        <div class="settings">
+            <div class="engine-check">Играть против компьютера:<input type="checkbox" id="checkbox" checked></div>
 
-<div class="row">
-<div class="square1"></div><div class="square2"></div><div class="square3"></div>
-</div>
-<div class="row">
-    <div class="square4"></div><div class="square5"></div><div class="square6"></div>
-    </div>
-    <div class="row">
-        <div class="square7"></div><div class="square8"></div><div class="square9"></div>
+            <div class="music">
+
+                <audio src="/zimfira-znak.mp3" class="track"></audio>
+
+                <div class="mute"></div>
+
+            </div>
+
+        </div>
+        <div class="field-size-setting">
+            <div class="field-size">Размер игрового поля: <input type="number" value="3" class="field-size-input"></div>
+            <div>
+                <button class="btn0">Применить</button>
+            </div>
+        </div>
+        <div class="app"></div>
+        <div class="score">СЧЕТ X: &nbsp <div class="xScore"></div> O: &nbsp<div class="oScore"></div>
         </div>
 
-</div>
+        <button type="submit" class="btn1">НОВАЯ ИГРА</button>
+        <button type="submit" class="btn2">СБРОСИТЬ СЧЕТ</button>
+    </div>
 
-</div>
+    <script src="cookie.js"></script>
+    <script src="script.js"></script>
+    <script src="ai.js"></script>
 
-<script src="script.js"></script>
+
 
 
 </body>
+
+<style>
+    .gameInterface {
+        margin: auto;
+        width: 304px;
+        height: 800px;
+        background-color: bisque;
+        display: block;
+        justify-content: center;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        font-size: 90px;
+    }
+
+    .btn1 {
+        height: 75px;
+        width: 150px;
+    }
+
+    .btn2 {
+        height: 75px;
+        width: 150px;
+    }
+
+    .score {
+        display: flex;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .engine-check {
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .xScore {
+        margin-right: 150px;
+    }
+
+    .field-size {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    .field-size-setting {
+        display: flex;
+    }
+
+    .field-size-input {
+        width: 40px;
+    }
+
+    .mute {
+        margin-left: 40px;
+        background-image: url("mute.png");
+        width: 32px;
+        height: 32px;
+    }
+
+    .settings {
+        display: flex;
+    }
+</style>
+
 </html>
